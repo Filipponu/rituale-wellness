@@ -1,9 +1,5 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/outputs/wellness-sconti/index.html" },
-    { "source": "/admin.html", "destination": "/outputs/wellness-sconti/admin.html" },
-    { "source": "/styles.css", "destination": "/outputs/wellness-sconti/styles.css" },
-    { "source": "/script.js", "destination": "/outputs/wellness-sconti/script.js" },
-    { "source": "/admin.js", "destination": "/outputs/wellness-sconti/admin.js" }
-  ]
+  "version": 2,
+  "outputDirectory": "outputs/wellness-sconti",
+  "cleanUrls": true
 }
