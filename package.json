@@ -1,5 +1,7 @@
 {
   "name": "rituale-wellness",
-  "version": "1.0.0",
-  "private": true
+  "version": "2.0.0",
+  "private": true,
+  "description": "Rituale: coupon wellness e magazine con automazione editoriale.",
+  "engines": { "node": ">=20" }
 }

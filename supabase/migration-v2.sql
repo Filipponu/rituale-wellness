@@ -1,0 +1,11 @@
+alter table articles add column if not exists slug text unique;
+alter table articles add column if not exists content text not null default '';
+alter table articles add column if not exists status text not null default 'published';
+alter table articles drop constraint if exists articles_status_check;
+alter table articles add constraint articles_status_check check (status in ('draft', 'scheduled', 'published'));
+alter table articles add column if not exists scheduled_at timestamptz;
+alter table offers add column if not exists affiliate_url text;
+alter table offers add column if not exists expires_at date;
+alter table offers add column if not exists active boolean not null default true;
+create index if not exists articles_published_created_at_idx on articles (status, created_at desc);
+create index if not exists coupon_clicks_created_at_idx on coupon_clicks (created_at desc);

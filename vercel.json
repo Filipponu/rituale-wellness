@@ -1,5 +1,5 @@
 {
   "version": 2,
-  "outputDirectory": "outputs/wellness-sconti",
-  "cleanUrls": true
+  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/index" }],
+  "crons": [{ "path": "/api/cron/publish", "schedule": "0 6 * * *" }]
 }
