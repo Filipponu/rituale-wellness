@@ -10,3 +10,4 @@ if(block){
 }
 const articleSlugs=['yoga-tappetino','pilates-accessori','activewear-comfort','wellness-serale'];
 document.querySelectorAll('#journal a').forEach((link,index)=>{if(link.textContent.includes('Leggi presto')){link.href=`/article.html?slug=${articleSlugs[index]}`;link.textContent='Leggi l’articolo →'}});
+document.querySelectorAll('a[href="#offerte"]').forEach(link=>{link.href='#journal';link.textContent='Scopri il journal →'});
