@@ -8,6 +8,6 @@ if(block){
   const form=document.querySelector('#newsletter-form');
   form?.addEventListener('submit',async e=>{e.preventDefault();const message=document.querySelector('#newsletter-message');try{const r=await fetch('/api/newsletter',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({email:form.querySelector('input').value})});const d=await r.json();if(!r.ok)throw Error(d.error);message.textContent='Grazie, sei iscritta/o!';form.reset()}catch(x){message.textContent=x.message}})
 }
-const articleSlugs=['yoga-tappetino','pilates-accessori','activewear-comfort','wellness-serale'];
+const articleSlugs=['yoga-mattino-10-minuti','pilates-principianti-iniziare','activewear-yoga-pilates-comfort','angolo-benessere-casa'];
 document.querySelectorAll('#journal a').forEach((link,index)=>{if(link.textContent.includes('Leggi presto')){link.href=`/article.html?slug=${articleSlugs[index]}`;link.textContent='Leggi l’articolo →'}});
 document.querySelectorAll('a[href="#offerte"]').forEach(link=>{link.href='#journal';link.textContent='Scopri il journal →'});

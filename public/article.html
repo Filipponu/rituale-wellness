@@ -1,4 +1,80 @@
-<!doctype html><html lang="it"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rituale Journal</title><style>body{margin:0;background:#f7f2e8;color:#153b35;font:17px/1.7 Arial}.wrap{width:min(760px,90%);margin:50px auto}a{color:#153b35}img{width:100%;max-height:420px;object-fit:cover}h1{font:48px/1.05 Georgia,serif}.tag{letter-spacing:.12em;text-transform:uppercase;font-size:12px}article{white-space:pre-wrap}</style><main class="wrap"><a href="/">← Torna a Rituale</a><p class="tag" id="category"></p><h1 id="title">Caricamento…</h1><img id="image" alt=""><article id="content"></article></main><script>
-const fallback={'yoga-tappetino':{category:'Yoga',title:'Come scegliere il tappetino yoga per casa',image_url:'/assets/articles/yoga-tappetino-casa.png',content:'Praticare a casa diventa più semplice con un tappetino adatto al tuo spazio. Scegli una superficie stabile, facile da pulire e sufficientemente aderente. Per pratiche lente e rilassanti può essere piacevole uno spessore maggiore; per sequenze dinamiche conta soprattutto la presa. Misura lo spazio, arrotolalo dopo l’uso e lascia che diventi il tuo piccolo invito quotidiano a muoverti.'},'pilates-accessori':{category:'Pilates',title:'Gli accessori pilates davvero utili',image_url:'/assets/articles/pilates-accessori-casa.png',content:'Non servono molti strumenti per iniziare: un tappetino stabile, una fascia elastica e una palla morbida possono accompagnare tanti esercizi. Scegli accessori semplici, che sai di poter riporre facilmente e usare con costanza. L’obiettivo non è riempire la stanza, ma creare un angolo che ti faccia venire voglia di tornare a muoverti.'},'activewear-comfort':{category:'Activewear',title:'Activewear: comfort che ti accompagna',image_url:'/assets/articles/activewear-comfort.png',content:'L’abbigliamento per il movimento funziona quando quasi ti dimentichi di indossarlo. Preferisci tessuti morbidi, cuciture poco invasive e capi che seguano le posizioni senza stringere. Un buon set deve essere versatile: utile sul tappetino, in una passeggiata e nella vita di tutti i giorni.'},'wellness-serale':{category:'Wellness',title:'Un rituale serale per rallentare',image_url:'/assets/articles/wellness-rituale-serale.png',content:'Un rituale serale non deve essere perfetto: basta scegliere pochi gesti ripetibili. Abbassa le luci, allontana lo schermo per qualche minuto, fai qualche respiro lento e prepara ciò che ti serve per il mattino. La costanza di un piccolo momento di cura vale più di una routine complicata.'}};
+<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Rituale Journal</title><style>body{margin:0;background:#f7f2e8;color:#153b35;font:17px/1.7 Arial}.wrap{width:min(760px,90%);margin:50px auto}a{color:#153b35}img{width:100%;max-height:420px;object-fit:cover;margin:8px 0 28px}h1{font:48px/1.05 Georgia,serif}.tag{letter-spacing:.12em;text-transform:uppercase;font-size:12px}article{white-space:pre-wrap}</style></head><body><main class="wrap"><a href="/">← Torna a Rituale</a><p class="tag" id="category"></p><h1 id="title">Caricamento…</h1><img id="image" alt=""><article id="content"></article></main><script>
+const fallback={
+ 'yoga-mattino-10-minuti':{category:'Yoga',title:'Yoga al mattino: una routine dolce di 10 minuti',image_url:'/assets/articles/yoga-tappetino-casa.png',content:`Yoga al mattino non deve essere una prova da superare. Può essere un piccolo appuntamento con te stessa: dieci minuti per respirare, muovere la schiena e cominciare con meno fretta.
+
+Non servono una stanza perfetta o una grande flessibilità. Ti bastano un tappetino, abiti comodi e la disponibilità a procedere piano. Se un movimento provoca dolore o giramenti di testa, fermati e scegli una variante più confortevole.
+
+1. Arriva sul tappetino — 1 minuto
+Siediti comoda oppure resta in piedi. Appoggia bene i piedi e fai tre respiri lenti. Non devi svuotare la mente: devi solo accorgerti di essere qui.
+
+2. Mobilizza la colonna — 2 minuti
+Portati a quattro appoggi. Inspira aprendo il petto con delicatezza; espira arrotondando la schiena. Ripeti sei volte seguendo il tuo respiro. Se i polsi sono sensibili, fai il movimento seduta su una sedia.
+
+3. Posizione del bambino — 1 minuto
+Porta il bacino verso i talloni soltanto fin dove è piacevole. Puoi appoggiare un cuscino sotto il petto: l'obiettivo è lasciare spazio al respiro, non arrivare in basso.
+
+4. Affondo basso sostenuto — 2 minuti
+Da quattro appoggi porta un piede avanti. Lascia le mani a terra o su una sedia. Cerca un'apertura gentile davanti all'anca e cambia lato dopo tre respiri.
+
+5. Piegamento morbido e chiusura — 4 minuti
+Torna in piedi, piega le ginocchia e lascia il busto scendere senza cercare il pavimento. Risali lentamente e chiediti: di che cosa ho bisogno oggi?
+
+La routine riesce quando è ripetibile. Anche due minuti contano.
+
+Autrice: Erica Rachele Viola Boros`},
+ 'pilates-principianti-iniziare':{category:'Pilates',title:'Pilates per principianti: come iniziare senza sentirsi in difficoltà',image_url:'/assets/articles/pilates-accessori-casa.png',content:`Iniziare pilates può sembrare impegnativo, ma il punto di partenza non è la perfezione. È imparare a respirare, ascoltare il corpo e costruire familiarità un gesto alla volta.
+
+Cosa serve davvero
+Per iniziare bastano abiti che non stringano, un tappetino stabile e un piccolo spazio. Non è necessario acquistare subito macchinari o tanti accessori. Un asciugamano piegato può rendere più comoda una posizione in ginocchio e una sedia stabile può diventare un appoggio utile.
+
+Tre principi utili
+Respira senza trattenere l'aria. Quando un esercizio richiede concentrazione è facile irrigidire mascella e spalle: controlla se il respiro continua a fluire.
+
+Scegli una piccola ampiezza. Sollevare una gamba di pochi centimetri con stabilità può essere più utile che alzarla molto perdendo l'allineamento.
+
+Non inseguire le ripetizioni. Cinque movimenti curati valgono più di venti fatti in fretta. Fermati quando la qualità diminuisce.
+
+Mini pratica iniziale
+Sdraiati con ginocchia piegate e piedi appoggiati. Resta per due minuti a respirare. Solleva poi un piede alla volta di pochi centimetri e riportalo a terra. Prosegui con un ponte piccolo: solleva il bacino fin dove ti senti stabile, resta un respiro e torna giù lentamente.
+
+Dovresti sentire lavoro e attenzione, non dolore acuto, formicolio o perdita di controllo. In caso di infortunio recente, gravidanza o dubbi specifici, chiedi il parere di un professionista qualificato.
+
+Quindici minuti, due volte alla settimana, sono un ottimo inizio.
+
+Autrice: Erica Rachele Viola Boros`},
+ 'activewear-yoga-pilates-comfort':{category:'Activewear',title:'Activewear per yoga e pilates: comfort prima di tutto',image_url:'/assets/articles/activewear-comfort.png',content:`L'activewear migliore è quello che smetti di notare dopo i primi minuti. Se un leggings scivola, una fascia stringe o una cucitura sfrega, l'attenzione passa dal respiro al fastidio.
+
+Prima di comprare un capo, pensa a come pratichi davvero. Ti muovi soprattutto sul tappetino? Cammini prima o dopo la lezione? Preferisci posizioni lente oppure una pratica più dinamica? La risposta conta più della tendenza del momento.
+
+La prova del movimento
+Quando provi un capo, non fermarti davanti allo specchio. Solleva le braccia, accovacciati, inclina il busto e siediti. Il punto vita resta al suo posto? Le cuciture tirano? Se devi sistemarlo continuamente, probabilmente non è il capo adatto.
+
+Tessuti e vestibilità
+Cerca una sensazione morbida a contatto con la pelle e un tessuto che recuperi la forma dopo il movimento. Per pratiche lente può essere piacevole un materiale soffice; per sessioni più intense può essere utile un tessuto che asciughi rapidamente.
+
+Un guardaroba piccolo ma utile
+Puoi partire da due leggings, due top e uno strato leggero. Scegli colori e tagli che indosseresti anche fuori dal tappetino: aumenterà la possibilità che diventino davvero parte della tua routine.
+
+Cura dei capi
+Segui sempre l'etichetta. In generale, lavaggi delicati e asciugatura all'aria aiutano a preservare elasticità e forma. Un capo non deve trasformare il tuo corpo: deve lasciarti libera di usarlo.
+
+Autrice: Erica Rachele Viola Boros`},
+ 'angolo-benessere-casa':{category:'Wellness',title:'Come creare un angolo benessere a casa, anche in poco spazio',image_url:'/assets/articles/wellness-rituale-serale.png',content:`Un angolo benessere non deve assomigliare a una spa e non deve occupare una stanza intera. Può essere un tappetino dietro una porta, una sedia vicino a una finestra o un piccolo cesto con gli oggetti che ti fanno rallentare.
+
+Scegli un punto realistico
+Non cercare il luogo perfetto. Cerca un angolo che puoi usare davvero: una parte del soggiorno, il lato del letto o un punto libero vicino a una parete. Se lo spazio è condiviso, scegli una soluzione che si monta e si ripone in meno di due minuti.
+
+Definisci il minimo indispensabile
+Per iniziare servono pochi elementi: un tappetino o una coperta, un cuscino o un asciugamano, una bottiglia d'acqua e un contenitore per riporre tutto. Se fai pilates, aggiungi eventualmente una fascia elastica.
+
+Luce e atmosfera
+La luce naturale può rendere lo spazio più invitante, ma non è indispensabile. Una lampada calda, una finestra aperta per qualche minuto o una playlist discreta possono segnare il passaggio dalla giornata piena a una pausa.
+
+Crea un rito di inizio
+Può essere srotolare il tappetino, togliere le scarpe o impostare un timer di dieci minuti. Ripetere lo stesso gesto rende la pratica più accessibile anche nei giorni con poca energia.
+
+Un rituale essenziale può essere: due minuti di respiro seduta, quattro minuti di mobilità dolce, due minuti di stretching leggero e due minuti per annotare come ti senti. Se salti qualche giorno, non hai fallito: il tuo angolo è lì per permetterti di ricominciare.
+
+Autrice: Erica Rachele Viola Boros`}};
 const params=new URLSearchParams(location.search),id=params.get('id'),slug=params.get('slug');function show(a){document.title=a.title+' — Rituale';category.textContent=a.category;title.textContent=a.title;image.src=a.image_url;image.alt=a.title;content.textContent=a.content||a.excerpt}fetch('/api/public/articles').then(r=>{if(!r.ok)throw Error();return r.json()}).then(items=>{const a=items.find(x=>String(x.id)===id||x.slug===slug);if(!a)throw Error();show(a)}).catch(()=>{const a=fallback[slug];if(a)show(a);else{title.textContent='Articolo non trovato';content.textContent='Torna alla home per vedere gli articoli disponibili.'}})
-</script></html>
+</script></body></html>
