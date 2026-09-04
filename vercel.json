@@ -1,5 +1,4 @@
 {
   "version": 2,
-  "rewrites": [{ "source": "/api/(.*)", "destination": "/api/index" }],
   "crons": [{ "path": "/api/cron/publish", "schedule": "0 6 * * *" }]
 }
